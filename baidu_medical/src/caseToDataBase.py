@@ -3,7 +3,7 @@ import pandas as pd
 import MySQLdb
 import os
 
-# Test
+# Test git
 path = r'D:\tutorial\data'
 
 error_count = 0

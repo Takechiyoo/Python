@@ -21,7 +21,7 @@ for name in files:
         error_count += 1
         print filename
     print data.columns
-    conn = MySQLdb.connect(host = 'localhost', user = 'root', passwd = '920129', db = 'baidu', use_unicode=1, charset = 'utf8')
+    conn = MySQLdb.connect(host = 'localhost', user = 'root', passwd = '******', db = 'baidu', use_unicode=1, charset = 'utf8')
     try:
         data.to_sql(con = conn, name = 'dataframe_test', if_exists = 'append', flavor = 'mysql', index = False)
         conn.commit()
@@ -31,7 +31,7 @@ for name in files:
         conn.rollback()
     print "success!"
 
-conn.close()
+    conn.close()
 
 print error_count
 print "hello world"
